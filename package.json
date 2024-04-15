@@ -1,6 +1,6 @@
 {
   "name": "@1xtr/sqs-consumer",
-  "version": "10.0.3",
+  "version": "10.0.4",
   "description": "Build SQS-based Node applications without the boilerplate",
   "type": "module",
   "exports": {
