@@ -1,25 +1,29 @@
-# sqs-consumer
+# @1xtr/sqs-consumer
 
-[![NPM downloads](https://img.shields.io/npm/dm/sqs-consumer.svg?style=flat)](https://npmjs.org/package/sqs-consumer)
+[![NPM downloads](https://img.shields.io/npm/dm/1xtr/sqs-consumer.svg?style=flat)](https://npmjs.org/package/sqs-consumer)
 [![Build Status](https://github.com/bbc/sqs-consumer/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/bbc/sqs-consumer/actions/workflows/test.yml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/16ec3f59e73bc898b7ff/maintainability)](https://codeclimate.com/github/bbc/sqs-consumer/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/16ec3f59e73bc898b7ff/test_coverage)](https://codeclimate.com/github/bbc/sqs-consumer/test_coverage)
 
 Build SQS-based applications without the boilerplate. Just define an async function that handles the SQS message processing.
 
+## Differents from origin
+
+Pinned `@aws-sdk/client-sqs` version to `3.445.0` for use with *Yandex Message Queue*
+
 ## Installation
 
 To install this package, simply enter the following command into your terminal (or the variant of whatever package manager you are using):
 
 ```bash
-npm install sqs-consumer
+npm install @1xtr/sqs-consumer
 ```
 
 > **Note**
 > This library assumes you are using [AWS SDK v3](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-sqs/index.html). If you are using v2, please install v5.8.0:
 >
 > ```bash
-> npm install sqs-consumer@5.8.0
+> npm install @1xtr/sqs-consumer@5.8.0
 > ```
 
 ### Node version
@@ -33,7 +37,7 @@ Visit [https://bbc.github.io/sqs-consumer/](https://bbc.github.io/sqs-consumer/)
 ## Usage
 
 ```js
-import { Consumer } from "sqs-consumer";
+import { Consumer } from "@1xtr/sqs-consumer";
 
 const app = Consumer.create({
   queueUrl: "https://sqs.eu-west-1.amazonaws.com/account-id/queue-name",
@@ -75,7 +79,7 @@ export AWS_ACCESS_KEY_ID=...
 If you need to specify your credentials manually, you can use a pre-configured instance of the [SQS Client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-sqs/classes/sqsclient.html) client.
 
 ```js
-import { Consumer } from "sqs-consumer";
+import { Consumer } from "@1xtr/sqs-consumer";
 import { SQSClient } from "@aws-sdk/client-sqs";
 
 const app = Consumer.create({
