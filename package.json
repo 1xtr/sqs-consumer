@@ -37,12 +37,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bbc/sqs-consumer.git"
+    "url": "git+https://github.com/1xtr/sqs-consumer.git"
   },
   "bugs": {
-    "url": "https://github.com/bbc/sqs-consumer/issues"
+    "url": "https://github.com/1xtr/sqs-consumer/issues"
   },
-  "homepage": "https://bbc.github.io/sqs-consumer/",
+  "homepage": "https://github.com/1xtr/sqs-consumer#readme",
   "keywords": [
     "sqs",
     "queue",
