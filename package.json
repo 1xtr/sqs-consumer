@@ -166,7 +166,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-sqs": "3.445.0",
-    "debug": "^4.3.4"
+    "debug": "4.3.4"
   },
   "peerDependencies": {
     "@aws-sdk/client-sqs": "3.445.0"
