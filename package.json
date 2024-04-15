@@ -1,5 +1,5 @@
 {
-  "name": "sqs-consumer",
+  "name": "@1xtr/sqs-consumer",
   "version": "10.0.0-canary.3",
   "description": "Build SQS-based Node applications without the boilerplate",
   "type": "module",
@@ -165,11 +165,11 @@
     "typescript": "^5.4.2"
   },
   "dependencies": {
-    "@aws-sdk/client-sqs": "^3.529.1",
+    "@aws-sdk/client-sqs": "3.445.0",
     "debug": "^4.3.4"
   },
   "peerDependencies": {
-    "@aws-sdk/client-sqs": "^3.529.1"
+    "@aws-sdk/client-sqs": "3.445.0"
   },
   "mocha": {
     "extensions": [
